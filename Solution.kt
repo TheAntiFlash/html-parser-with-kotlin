@@ -25,8 +25,17 @@ class Solution(html: String) {
         }
     }
 
-    fun getAttributesFromTag(html : String) : MutableMap<String,String>{
-        return mutableMapOf()
+    fun getAttributesFromTag(htmltag : String) : MutableMap<String,String>{
+        val mutableMap1= mutableMapOf<String,String>()
+        val htmltagsplit = htmltag.split(" ")
+        for(i in htmltagsplit)
+        {
+            val keyValue = i.split("=")
+            if (keyValue.size >= 2) {
+                mutableMap1.put(keyValue[0],keyValue[1])
+            }
+        }
+        return mutableMap1
     }
 
 }
