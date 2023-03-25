@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c121b52e-8fd2-4f94-9e81-a3ee31e3252d" name="Changes" comment="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it.">
-      <change afterPath="$PROJECT_DIR$/HtmlElement.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParserState.kt" afterDir="false" />
+    <list default="true" id="c121b52e-8fd2-4f94-9e81-a3ee31e3252d" name="Changes" comment="switched form tree based parser to mutable list. tree too difficult to implement. started generating functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Solution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tree.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679561527775</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="switched form tree based parser to mutable list. tree too difficult to implement. started generating functionality">
+      <created>1679737134104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679737134104</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit. Basic Project" />
     <MESSAGE value="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it." />
+    <MESSAGE value="switched form tree based parser to mutable list. tree too difficult to implement. started generating functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched form tree based parser to mutable list. tree too difficult to implement. started generating functionality" />
   </component>
 </project>

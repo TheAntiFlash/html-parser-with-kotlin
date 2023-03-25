@@ -11,7 +11,10 @@ fun main (){
             "  <div class= \"buttons\">"
 
 
-    print(test.indexOf("<"))
+    val htmlparser = Solution(test)
 
+    htmlparser.htmlElements.forEach {
+        println(it)
+    }
 
 }

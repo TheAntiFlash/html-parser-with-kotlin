@@ -1,7 +1,7 @@
 class Solution(html: String) {
     private var htmlTree = Tree()
     private lateinit var state : ParserState
-    private var htmlElements = mutableListOf<HtmlElement>()
+    var htmlElements = mutableListOf<HtmlElement>()
     init {
         parseToTree(html)
     }
@@ -17,7 +17,7 @@ class Solution(html: String) {
             else if (state == ParserState.STATE_START_TAG){
                 if(c == '>') {
                     state = ParserState.STATE_END_TAG
-                    endIndex = i
+                    endIndex = i+1
                     htmlElements.add(HtmlElement(html.substring(startIndex, endIndex), getAttributesFromTag("")))
                 }
             }
