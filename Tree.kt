@@ -3,7 +3,7 @@ class Tree {
     var root : TreeNode? = null
 
     init {
-        root = TreeNode("", mutableMapOf())
+        root = TreeNode(HtmlElement("", mutableMapOf()))
     }
     fun inOrderTraversal(){
         inOrderTraversalHelper(root)
@@ -12,10 +12,17 @@ class Tree {
         if(currentNode == null){
             return
         }
+
+        for (i in currentNode.depth downTo 0) {
+            print("\t\t")
+        }
+        print(currentNode.htmlElement.htmlTag)
+        print(", ")
+        print(currentNode.htmlElement.htmlAttributes)
+        println()
+
         for (node in currentNode.children){
-            if (node != null) {
-                print(node.htmlTag)
-            }
+
             inOrderTraversalHelper(node)
 
         }
@@ -23,7 +30,7 @@ class Tree {
     }
 }
 
-data class TreeNode(var htmlTag: String, var nodeAttributes: MutableMap<String,String> = mutableMapOf()){
+data class TreeNode(var htmlElement: HtmlElement){
     var parent : TreeNode? = null
         private set
 
@@ -37,11 +44,12 @@ data class TreeNode(var htmlTag: String, var nodeAttributes: MutableMap<String,S
         private set
 
     fun addChild(htmlTag: String, nodeAttributes: MutableMap<String, String>) {
-        val node = TreeNode(htmlTag, nodeAttributes)
+        val node = TreeNode(HtmlElement(htmlTag, nodeAttributes))
         node.parent = this
         node.index = this.childLowestIndex
         this.childLowestIndex++
         node.depth = this.depth + 1
         children.add(node)
     }
+
 }
