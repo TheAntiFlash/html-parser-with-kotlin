@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c121b52e-8fd2-4f94-9e81-a3ee31e3252d" name="Changes" comment="initial commit. Basic Project">
-      <change afterPath="$PROJECT_DIR$/Tree.kt" afterDir="false" />
+    <list default="true" id="c121b52e-8fd2-4f94-9e81-a3ee31e3252d" name="Changes" comment="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it.">
+      <change afterPath="$PROJECT_DIR$/HtmlElement.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParserState.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Solution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tree.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -40,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
@@ -57,6 +60,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -77,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679509494798</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it.">
+      <created>1679561527774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679561527775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,7 +102,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="addingTreeDataStructure" />
+                        <option value="addingHTMLparsingFunctionality" />
                       </list>
                     </value>
                   </entry>
@@ -105,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit. Basic Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit. Basic Project" />
+    <MESSAGE value="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding skeleton of tree data structure. Subject to change. This is just an idea of how we could implement it." />
   </component>
 </project>

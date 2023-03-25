@@ -2,6 +2,9 @@
 class Tree {
     var root : TreeNode? = null
 
+    init {
+        root = TreeNode("", mutableMapOf())
+    }
     fun inOrderTraversal(){
         inOrderTraversalHelper(root)
     }
@@ -16,6 +19,7 @@ class Tree {
             inOrderTraversalHelper(node)
 
         }
+
     }
 }
 

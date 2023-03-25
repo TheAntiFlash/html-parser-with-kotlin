@@ -1,8 +1,33 @@
-class Solution() {
+class Solution(html: String) {
     private var htmlTree = Tree()
+    private lateinit var state : ParserState
+    private var htmlElements = mutableListOf<HtmlElement>()
     init {
-        println("HelloWorld")
+        parseToTree(html)
+    }
 
+    private fun parseToTree(html : String){
+        var startIndex : Int = 0
+        var endIndex : Int = 0
+        for ((i,c) in html.withIndex()) {
+            if(c == '<' && html[i+1] != '/'){
+                state = ParserState.STATE_START_TAG
+                startIndex = i
+            }
+            else if (state == ParserState.STATE_START_TAG){
+                if(c == '>') {
+                    state = ParserState.STATE_END_TAG
+                    endIndex = i
+                    htmlElements.add(HtmlElement(html.substring(startIndex, endIndex), getAttributesFromTag("")))
+                }
+            }
+
+        }
+    }
+
+    fun getAttributesFromTag(html : String) : MutableMap<String,String>{
+        return mutableMapOf()
     }
 
 }
+
