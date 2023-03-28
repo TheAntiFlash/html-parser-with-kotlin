@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c121b52e-8fd2-4f94-9e81-a3ee31e3252d" name="Changes" comment="added the Solution.parseToTree method, which gets all html tags from the given string and adds them to each index of the Solution.htmlElements Mutable List.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Solution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Solution.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlattributeparserfunction" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

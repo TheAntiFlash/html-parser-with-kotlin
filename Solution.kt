@@ -3,29 +3,10 @@ import java.util.Stack
 class Solution(html: String) {
     var htmlTree = Tree()
     private lateinit var state : ParserState
-    //private var htmlElements = mutableListOf<HtmlElement>()
     init {
         parseToTree(html)
     }
 
-   /* private fun parseToList(html : String){
-        var startIndex : Int = 0
-        var endIndex : Int
-        for ((i,c) in html.withIndex()) {
-            if(c == '<' && html[i+1] != '/'){
-                state = ParserState.STATE_START_TAG
-                startIndex = i
-            }
-            else if (state == ParserState.STATE_START_TAG){
-                if(c == '>') {
-                    state = ParserState.STATE_END_TAG
-                    endIndex = i+1
-                    htmlElements.add(HtmlElement(html.substring(startIndex, endIndex), getAttributesFromTag("")))
-                }
-            }
-
-        }
-    }*/
     private fun parseToTree(html : String){
         val stackOfChildrenForEachParent = Stack<Int>()
         stackOfChildrenForEachParent.push(0)
@@ -56,7 +37,6 @@ class Solution(html: String) {
                     state = ParserState.STATE_END_TAG
                     endIndex = i+1
                     currentTreeNode?.addChild("", mutableMapOf())
-
                     currentTreeNode = currentTreeNode!!.children[stackOfChildrenForEachParent.peek()]
                     currentTreeNode?.htmlElement = HtmlElement(html.substring(startIndex, endIndex), getAttributesFromTag(html.substring(startIndex, endIndex)))
                     val temp = stackOfChildrenForEachParent.pop() + 1
